@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - More Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Featured</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="products">
+        <h2>More Awesome Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/e4/90/7c/e4907cd76de34569dbfd6e36d20458af.jpg alt="Pastel Pink Polaroid camera">
+                <h3>Pastel Pink Polaroid camera</h3>
+                <p>₹9999</p>
+                <button onclick="addToCart('Pastel Pink Polaroid camera', 9999)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/bc/8e/72/bc8e721e47aaf8d6bc29979f9971299d.jpg alt="Dusky Blue Polaroid camera">
+                <h3>Dusky Blue Polaroid camera</h3>
+                <p>₹9999</p>
+                <button onclick="addToCart('Dusky Blue Polaroid camera', 9999)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/2c/e3/3b/2ce33b8e0d90930682d796fae958a6d9.jpg alt="Blue Polaroid camera 2.0">
+                <h3>Blue Polaroid camera 2.0</h3>
+                <p>₹11999</p>
+                <button onclick="addToCart('Blue Polaroid camera 2.0', 11999)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="script.js"></script>
+
+<section class="products">
+  <h2>Popular Picks</h2>
+
+  <div style="text-align: center; margin: 1rem auto;">
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" style="padding: 0.6rem; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+  </div>
+
+  <div class="product-grid" id="productList">
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/72/90/59/7290594338a6b3c77edd3d88d7e2f6ae.jpg alt="LOLLIA Fragance">
+          <h3>LOLLIA Fragance</h3>
+          <p>₹2999</p>
+          <button onclick="addToCart('LOLLIA Fragance', 2999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/16/fe/17/16fe17877184d8765b3a64f4ec1bfff3.jpg alt="Rhode Peptide Lip Tint">
+          <h3>Rhode Peptide Lip Tint</h3>
+          <p>₹6999</p>
+          <button onclick="addToCart('Rhode Peptide Lip Tint', 6999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/c2/f3/65/c2f365a1fe12099c3cb63d16770d43c4.jpg alt="Rhode Lip Phone Case">
+          <h3>Rhode Lip Phone Case</h3>
+          <p>₹4599</p>
+          <button onclick="addToCart('Rhode Lip Phone Case', 4599)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/65/e3/d9/65e3d96dd0df9b53debc6aaab64b68bb.jpg alt="Flower Wall Lights">
+          <h3>Flower Wall Lights</h3>
+          <p>₹3499</p>
+          <button onclick="addToCart('Flower Wall Lights', 3499)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/64/c5/59/64c559e8bc6525b8c671c704dd021651.jpg alt="Summer Outer">
+          <h3>Summer Outer</h3>
+          <p>₹1999</p>
+          <button onclick="addToCart('Summer Outer', 1999)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+          <img src=https://i.pinimg.com/736x/e9/df/1a/e9df1a634627b3c6f1d08749a8235a82.jpg alt="Modern Hoop Earrings">
+          <h3>Modern Hoop Earrings</h3>
+          <p>₹899</p>
+          <button onclick="addToCart('Modern Hoop Earrings', 899)">Add to Cart</button>
+      </div>
+  </div>
+</section>
+</body>
+</html>

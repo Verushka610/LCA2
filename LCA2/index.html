@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="products.html">Featured</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ShopEase</h1>
+            <p>Your one-stop shop for everything!</p>
+            <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/77/88/21/778821dc8676de592828ffded2ff95e5.jpg alt="Shoes">
+                <h3>Stylish Sneakers</h3>
+                <p>₹4999</p>
+                <button onclick="addToCart('Stylish Sneakers', 4999)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/f4/59/d8/f459d8bc0de20304180a77ca169538d4.jpg alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>₹8999</p>
+                <button onclick="addToCart('Wireless Headphones', 8999)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/f1/78/c9/f178c97a6c6b66be007add97799c3bd9.jpg alt="Backpack">
+                <h3>Travel Backpack</h3>
+                <p>₹3500</p>
+                <button onclick="addToCart('Travel Backpack', 3500)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src=https://i.pinimg.com/736x/47/60/2c/47602cf810e45f9b6269570b069e89fb.jpg alt="Wrist Watch">
+                <h3>Classic Wrist Watch</h3>
+                <p>₹2000</p>
+                <button onclick="addToCart('Classic Wrist Watch', 2000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src=https://i.pinimg.com/736x/34/0b/e9/340be9b525c313cda83cadc30472bb54.jpg alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+            <div class="category">
+                <img src=https://i.pinimg.com/736x/c1/1d/20/c11d206e3242c393f8d750ff247051af.jpg alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category">
+                <img src=https://i.pinimg.com/736x/20/54/8a/20548a47c2bd686fc490f8f72468277a.jpg alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+            <div class="category">
+                <img src=https://i.pinimg.com/736x/84/f5/72/84f572fcc15a7f1f81bac34dbb37b203.jpg alt="Home Decor">
+                <h3>Home Decor</h3>
+            </div>
+        </div>
+    </section>
+
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    
+
+    <section id="cart" class="cart">
+        <h2>Your Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₹00</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="toast" class="toast">Product added to cart!</div>
+ 
+
+</body>
+</html>
